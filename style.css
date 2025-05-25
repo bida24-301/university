@@ -5,17 +5,28 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
     background-position: center;
     background-size: cover;
     position: relative; 
+}
+.sub-header {
+    padding-top: 80px; 
 }
 nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent; 
+    z-index: 1000; 
+    padding: 10px 0;
 }
+
 nav img{
     width: 150px;
 }
@@ -30,7 +41,7 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color: #fff;
+    color: #d3d3d3;
     text-decoration: none;
     font-size: 13px;
 }
