@@ -5,7 +5,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
     background-position: center;
     background-size: cover;
     position: relative; 
@@ -22,10 +22,11 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    background: transparent; 
+    background: transparent;
     z-index: 1000; 
     padding: 10px 0;
 }
+
 
 nav img{
     width: 150px;
@@ -41,7 +42,7 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color: #d3d3d3;
+    color: #D3D3D3;
     text-decoration: none;
     font-size: 13px;
 }
@@ -91,24 +92,61 @@ nav img{
     transition: 1s;
 }
 
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: fixed;
-        background: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: 0;
-        text-align: left;
-        z-index: 2;
-    }
+nav .fa-bars,
+nav .fa-times {
+  display: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    background: #000;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    transition: 0.5s;
+    z-index: 2;
+  }
+
+  nav ul {
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  nav .fa-bars,
+  nav .fa-times {
+    display: block;
+    margin: 20px;
+  }
+  .nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  gap: 5px; 
+}
+
+.nav-links ul li {
+  width: 100%; 
+}
+
+.nav-links ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 10px 0;
+}
+
+}
+
 
 /*------course-----*/
 
@@ -271,7 +309,7 @@ h3{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(banner2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -322,7 +360,7 @@ h3{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
